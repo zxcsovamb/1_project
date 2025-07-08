@@ -104,7 +104,7 @@ class MainWindow(QWidget):
 
     def show_installers(self):
         layout = QVBoxLayout()
-        items = [("Anydesk", self.download_anydesk), ("Chrome", self.download_chrome),("Net", self.download_net),("Visual C++", self.download_Visual_C),("AHK", self.download_ahk)]
+        items = [("Anydesk", self.download_anydesk), ("Chrome", self.download_chrome),(".NET Framework", self.download_net),("Visual C++", self.download_Visual_C),("AHK", self.download_ahk)]
         for name, func in items:
             hlayout = QHBoxLayout()
             label = QLabel(name)
@@ -212,3 +212,4 @@ if __name__ == '__main__':
     window = MainWindow()
     window.show()
     sys.exit(app.exec())
+ф
