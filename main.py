@@ -16,7 +16,6 @@ from PyQt6.QtCore import Qt
 
 
 def open_file(path):
-    """Кроссплатформенное открытие файлов."""
     if platform.system() == "Windows":
         os.startfile(path)
     elif platform.system() == "Darwin":  # macOS
@@ -213,3 +212,4 @@ if __name__ == '__main__':
     window.show()
     sys.exit(app.exec())
 ф
+
